@@ -18,7 +18,7 @@ var vector = new OpenLayers.Layer.Vector("GeoJSON", {
     })
 });
 
-var center = new OpenLayers.LonLat(-59.176757410168,-59.176757410168);
+var center = new OpenLayers.LonLat(-6793941.5586111,-4541765.4272672);
 
 var map = new OpenLayers.Map({
     div: "map",
