@@ -23,7 +23,7 @@ var center = new OpenLayers.LonLat(-109.6, 46.7).transform("EPSG:4326", "EPSG:90
 
 var map = new OpenLayers.Map({
     div: "map",
-    layers: [wms, vector],
+    layers: [hybrid, vector],
     center: center,
     zoom: 2
 });
