@@ -18,7 +18,7 @@ var vector = new OpenLayers.Layer.Vector("GeoJSON", {
     })
 });
 
-var center = new OpenLayers.LonLat(-38.407374530274, -60.519242686196).transform(new OpenLayers.Projection('EPSG:4326'), new OpenLayers.Projection('EPSG:900913'));
+var center = new OpenLayers.LonLat(-38.407374530274, -60.519242686196).transform("EPSG:4326", "EPSG:900913");
 
 var map = new OpenLayers.Map({
     div: "map",
