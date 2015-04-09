@@ -12,8 +12,14 @@
         var lat = -50.279244;
         var zoom = 3;
         var map, layer;
-
-        function init(){
+         function init(){
+            map = new OpenLayers.Map( 'map' );
+            layer = new OpenLayers.Layer.WMS( "OpenLayers WMS", 
+                    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+                    {layers: 'basic'} );
+            map.addLayer(layer);
+            map.setCenter(new OpenLayers.LonLat(lon, lat), zoom);
+            function init(){
             map = new OpenLayers.Map( 'map' );
             layer = new OpenLayers.Layer.WMS( "OpenLayers WMS", 
                     "http://vmap0.tiles.osgeo.org/wms/vmap0",
@@ -29,7 +35,9 @@
 	          });
       
            map.addLayer(pointsLayer);
+
         }
+        
     </script>
   </head>
   <body onload="init()">
