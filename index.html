@@ -9,7 +9,7 @@
     <script src="http://dev.openlayers.org/releases/OpenLayers-2.13/lib/OpenLayers.js"></script>
     <script type="text/javascript">
         var lon = -38.334764;
-        var lat = -60.279244;
+        var lat = -50.279244;
         var zoom = 5;
         var map, layer;
 
@@ -20,14 +20,7 @@
                     {layers: 'basic'} );
             map.addLayer(layer);
             map.setCenter(new OpenLayers.LonLat(lon, lat), zoom);
-            var featurecollection = new OpenLayers.Layer.Vector("GeoJSON", {
-                projection: "EPSG:4326",
-                strategies: [new OpenLayers.Strategy.Fixed()],
-                protocol: new OpenLayers.Protocol.HTTP({
-                    url: "tresArroyosPoints.json",
-                    format: new OpenLayers.Format.GeoJSON()
-                })
-            });
+            var featurecollection = "tresArroyosPoints.json"
       
            var geojson_format = new OpenLayers.Format.GeoJSON();
            var vector_layer = new OpenLayers.Layer.Vector(); 
