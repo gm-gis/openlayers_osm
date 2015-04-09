@@ -21,7 +21,7 @@
             map.addLayer(layer);
             map.setCenter(new OpenLayers.LonLat(lon, lat), zoom);
             var pointsLayer = new OpenLayers.Layer.Vector("points", {
-	            projection: EPSG:4326,
+	            projection: "EPSG:4326",
 	            strategies: [new OpenLayers.Strategy.Fixed()],
 	            protocol: new OpenLayers.Protocol.HTTP({
 	                url: "tresArroyosPoints.geojson",
