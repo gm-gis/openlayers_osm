@@ -25,5 +25,5 @@ var map = new OpenLayers.Map({
     div: "map",
     layers: [hybrid, vector],
     center: center,
-    zoom: 2
+    zoom: 8
 });
