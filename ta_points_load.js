@@ -12,7 +12,7 @@ var vector = new OpenLayers.Layer.Vector("GeoJSON", {
     projection: "EPSG:4326",
     strategies: [new OpenLayers.Strategy.Fixed()],
     protocol: new OpenLayers.Protocol.HTTP({
-        url: "ta_points.json",
+        url: "ta_points.geojson",
         format: new OpenLayers.Format.GeoJSON()
     })
 });
