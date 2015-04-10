@@ -8,7 +8,7 @@ var apiKey = "AqTGBsziZHIJYYxgivLBf0hVdrAk9mWO5cQcb8Yux8sW5M8c8opEC2lZqKR1ZZXf";
 //    name: "Bing Aerial With Labels"
 //});
 var wms = new OpenLayers.Layer.WMS( "OpenLayers WMS",
- /          "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
+         "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
 var vector = new OpenLayers.Layer.Vector("GeoJSON", {
     projection: "EPSG:4326",
     strategies: [new OpenLayers.Strategy.Fixed()],
