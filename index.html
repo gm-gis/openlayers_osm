@@ -15,10 +15,15 @@
     <h2>My Map</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
+     var geojson_format = new OpenLayers.Format.GeoJSON({
+                    'internalProjection': new OpenLayers.Projection("EPSG:3857"),
+                    'externalProjection': new OpenLayers.Projection("EPSG:4326")
+                });
       var vectorLayer = new ol.layer.Vector({
           source: new ol.source.GeoJSON({
             projection: 'EPSG:4326',
-            url: 'tresArroyosPoints.json'
+            url: 'tresArroyosPoints.json',
+            format=geojson_format
           })
       });
       var map = new ol.Map({
