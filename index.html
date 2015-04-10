@@ -16,8 +16,8 @@
     <div id="map" class="map"></div>
     <script type="text/javascript">
      var geojson_format = new ol.Format.GeoJSON({
-                    'internalProjection': new OpenLayers.Projection("EPSG:3857"),
-                    'externalProjection': new OpenLayers.Projection("EPSG:4326")
+                    'internalProjection': new ol.Projection("EPSG:3857"),
+                    'externalProjection': new ol.Projection("EPSG:4326")
                 });
       var vectorLayer = new ol.layer.Vector({
           source: new ol.source.GeoJSON({
