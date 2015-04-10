@@ -23,7 +23,7 @@ var center = new OpenLayers.LonLat(-60.24086515538559,-38.35180248916408).transf
 
 var map = new OpenLayers.Map({
     div: "map",
-    layers: wms, vector],
+    layers: [wms, vector],
     center: center,
     zoom: 8
 });
